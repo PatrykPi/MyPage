@@ -37,10 +37,10 @@
     z-index: -1;
     background: linear-gradient(var(--theme-color-1), var(--theme-color-1)) 0 0 repeat;
     transform: rotate(-30deg);
-    animation: diagonal-background-move 2s;
+    animation: diagonal-background-navbar 2s;
 }
 
-@keyframes diagonal-background-move {
+@keyframes diagonal-background-navbar {
     0% {
         /* height: 0px; */
             height: 0;
@@ -65,7 +65,7 @@
     flex-direction: column;
     align-items: center;
     animation: emerging 2s;
-    animation-delay: 1.3s;
+    animation-delay: 1.8s;
     animation-fill-mode: backwards;
 }
 
@@ -97,7 +97,7 @@
 }
 
 .container {
-    width: 65%;
+    width: 75%;
     margin: auto;
 }
 
@@ -106,38 +106,53 @@
 }
 
 .personal-data{
-    display: grid;
-    grid-gap: 0  2%;
-    grid-template-columns: 5fr 6fr;
-    grid-template-rows: 50vh;
+    height: 70vh;
+    display: flex;
 }
 
-.personal-data__my-photo {
+.personal-data--diagonal-background{
+    position: relative;
     overflow: hidden;
 }
 
-.my-photo__photo{
-    width: 17rem;
-    height: 17rem;
-    background-image: url(../image/lucas-sankey-9R-CH7PR150-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.personal-data--diagonal-background::before {
+    content: "";
+    position: absolute;
+    width: 400%;
+    height: 80vw;
+    z-index: -1;
+    background: linear-gradient(var(--theme-color-1), var(--theme-color-1)) 0 0 repeat;
+    transform: rotate(30deg);
+    animation: diagonal-background-personal-data 2s;
+}
+
+@keyframes diagonal-background-personal-data {
+    0% {
+        /* height: 0px; */
+        height: 0;
+    }
+
+    100% {
+        /* height: 300px */
+        height: 80vw;
+    }
+}
+
+.personal-data__circle-1{
+    width: 15rem;
+    height: 15rem;
+    margin: auto;
+    background-color: cornsilk;
     border-radius: 100%;
-    animation: emerging 1.8s;
-    animation-delay: 1.8s;
-    animation-fill-mode: backwards;
+    display: flex;
 }
 
-.personal_data__details{
-    padding-top: 2rem;
-    animation: emerging 1.8s;
-    animation-delay: 2s;
-    animation-fill-mode: backwards;
-}
-
-.personal_data__details p{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    margin-bottom: 2rem;
+.circle-1__circle-2{
+    width: 13rem;
+    height: 13rem;
+    margin: auto;
+    background-image: url(../image/lucas-sankey-9R-CH7PR150-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
 }
