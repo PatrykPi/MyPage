@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: inherit;
+    text-decoration: none;
+}
+
+.nav__links{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.nav__links > li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 2.5rem;
+}
+
+.nav__links > li > a{
+    margin-bottom: 0.5rem;
+}
+.nav__links > li > hr {
+    border-top: 1.5px solid red;
+    width: 0%;
+    visibility: hidden;
+}
+
+.nav__links > li:hover > hr{
+    width: 100%;
+    visibility: visible;
+    transition: width .4s ease;
+}
