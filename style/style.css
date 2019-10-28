@@ -145,6 +145,9 @@
     padding: 2rem;
     font-size: 1.5rem;
     color: var(--theme-color-1);
+    animation: emerging 2s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
 }
 
 .personal-data__circle-1{
@@ -173,4 +176,7 @@
     padding: 2rem;
     color: white;
     font-size: 1.5rem;
+    animation: emerging 2s;
+    animation-delay: 2.5s;
+    animation-fill-mode: backwards;
 }
