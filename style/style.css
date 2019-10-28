@@ -107,7 +107,9 @@
 
 .personal-data{
     height: 70vh;
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr ;
+    grid-template-rows: 1fr;
 }
 
 .personal-data--diagonal-background{
@@ -137,13 +139,18 @@
         height: 80vw;
     }
 }
+.personal-data__text-before{
+    align-self: end;
+    padding: 2rem;
+}
 
 .personal-data__circle-1{
     width: 15rem;
     height: 15rem;
-    margin: auto;
-    background-color: cornsilk;
+    background-color: white;
     border-radius: 100%;
+    justify-self: center;
+    align-self: center;
     display: flex;
 }
 
@@ -155,4 +162,9 @@
     background-position: center;
     background-size: cover;
     border-radius: 100%;
+}
+
+.personal-data__text-after {
+    align-self: start;
+    padding: 2rem;
 }
