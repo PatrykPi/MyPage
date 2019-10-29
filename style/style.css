@@ -162,7 +162,7 @@ body {
     border-radius: 100%;
 }
 
-.personal-data__text-after {
+.personal-data__details {
     align-self: start;
     padding: 3rem 0;
     color: white;
@@ -172,7 +172,7 @@ body {
     animation-fill-mode: backwards;
 }
 
-.personal-data__text-after p {
+.personal-data__details p {
     font-size: 1.1rem;
     margin-bottom: 1.5rem;
     /* font-family: 'Black Ops One',
@@ -183,7 +183,7 @@ body {
     cursive; */
 }
 
-.personal-data__text-after p:first-child {
+.personal-data__details p:first-child {
     font-size: 4rem;
 }
 
