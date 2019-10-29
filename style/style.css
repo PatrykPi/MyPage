@@ -111,7 +111,7 @@ body {
     content: "";
     position: absolute;
     width: 400%;
-    height: 76vw;
+    height: 75vw;
     left: -10%;
     z-index: -1;
     background: url(../image/backdrop-874452_1280.jpg) 0 0 repeat;
@@ -131,16 +131,20 @@ body {
 .personal-data__media p {
     margin-bottom: 1.1rem;
 }
-
-.personal-data__media p:last-child i {
-    font-size: 1.9rem;
-}
-
 .personal-data__media i {
     margin-right: 0.9rem;
 }
 
-.personal-data__circle-1 {
+.media__social-media {
+    font-size: 2.1rem;
+}
+
+.media__social-media:hover {
+    --theme-color-1-lightness: 47%;
+    color: hsl(var(--theme-color-1-hue), var(--theme-color-1-saturation), var(--theme-color-1-lightness));
+}
+
+.personal-data__circle-background {
     width: 16rem;
     height: 16rem;
     background-color: white;
@@ -152,7 +156,7 @@ body {
     align-items: center;
 }
 
-.circle-1__circle-2 {
+.circle-background__circle-photo {
     width: 14rem;
     height: 14rem;
     background-image: url(../image/patryk2.jpg);
@@ -175,19 +179,15 @@ body {
 .personal-data__details p {
     font-size: 1.1rem;
     margin-bottom: 1.5rem;
-    /* font-family: 'Black Ops One',
-    cursive; */
     font-family: 'Audiowide',
     cursive;
-    /* font-family: 'Bungee Shade',
-    cursive; */
 }
 
 .personal-data__details p:first-child {
     font-size: 4rem;
 }
 
-@keyframes diagonal-background-navbar {
+/* @keyframes diagonal-background-navbar {
     0% {
         width: 0;
     }
@@ -215,4 +215,4 @@ body {
     100% {
         height: 76vw;
     }
-}
+} */
