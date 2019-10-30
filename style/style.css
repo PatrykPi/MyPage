@@ -92,7 +92,14 @@ body {
 }
 
 .card {
-    margin-top: 3rem;
+    margin: 3rem 0 4.5rem 0;
+}
+
+.card__header {
+    font-size: 3rem;
+    color: var(--theme-color-1);
+    text-transform: uppercase;
+    font-weight: normal;
 }
 
 .personal-data {
@@ -180,12 +187,38 @@ body {
     font-size: 1.1rem;
     margin-bottom: 1.5rem;
     font-family: 'Audiowide',
-    cursive;
+    sans-serif;
 }
 
 .personal-data__details p:first-child {
     font-size: 4rem;
 }
+
+.technologies{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5%;
+    margin-top: 2rem;
+}
+
+.back-end__java-logo{
+    display: flex;
+    justify-content: center;
+    font-size: 10rem;
+    color: red;
+}
+
+.front-end__tech-logos{
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.front-end__tech-logos i:first-child,
+.front-end__tech-logos i:last-child {
+    align-self: flex-end;
+}
+
 
 /* @keyframes diagonal-background-navbar {
     0% {
