@@ -104,6 +104,10 @@ body {
     animation-fill-mode: backwards;
 }
 
+/* 
+    PERSONAL DATA 
+                    */
+
 .personal-data {
     height: 70vh;
     display: grid;
@@ -196,72 +200,67 @@ body {
     font-size: 4rem;
 }
 
+/* 
+    TECHNOLOGIES 
+                    */
+
 .technologies{
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 2rem;
 }
 
-.technologies__java-logo {
-    order: 2;
+.technologies__logo{
     display: flex;
     justify-content: center;
+}
+
+.technologies__logo--java{
+    order: 2;
     font-size: 10rem;
     color: red;
 }
-.technologies__back-end-details{
-    order: 4;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-}
 
-.back-end-details__header{
-    text-align: center;
-    margin-bottom: 0.5rem;
-    font-size: 2rem;
-}
-
-.back-end-details__list {
-    list-style: none;
-    font-size: 1.2rem;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.technologies__front-end-logos {
+.technologies__logo--front-end {
     order: 1;
     font-size: 6rem;
-    display: flex;
-    justify-content: center;
 }
 
-.front-end-logos__css3{
+.logo__css3 {
     align-self: flex-end;
     color: rgb(0, 109, 252);
 }
-.front-end-logos__html5{
+
+.logo__html5 {
     color: rgb(255, 102, 0);
 }
-.front-end-logos__javascript{
+
+.logo__javascript {
     align-self: flex-end;
     color: rgb(247, 247, 16);
     font-size: 5.5rem;
 }
 
-.technologies__front-end-details {
-    order: 3;
+.technologies__details{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.front-end-details__header {
+.technologies__details--back-end{
+    order: 4;
+}
+
+.technologies__details--front-end {
+    order: 3;
+}
+
+.details__header{
     margin-bottom: 0.5rem;
     font-size: 2rem;
 }
 
-.front-end-details__list{
+.details__list{
     list-style: none;
     font-size: 1.2rem;
 }
