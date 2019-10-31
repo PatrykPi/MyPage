@@ -11,7 +11,7 @@
 
 :root {
     /* hsl(177, 70%, 41%) */
-    --theme-color-1-hue: 0;
+    --theme-color-1-hue: 254;
     --theme-color-1-saturation: 70%;
     --theme-color-1-lightness: 41%;
     --theme-color-1: hsl(var(--theme-color-1-hue), var(--theme-color-1-saturation), var(--theme-color-1-lightness));
