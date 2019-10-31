@@ -18,11 +18,11 @@
 <body>
     <nav>
         <ul class="navbar navbar--diagonal-background">
-            <li class="navbar__link"><a href="#"><span>About me</span>
+            <li class="navbar__link"><a href="#personal-data"><span>About me</span>
                     <hr></a></li>
-            <li class="navbar__link"><a href="#"><span>Qualification</span>
+            <li class="navbar__link"><a href="#skills"><span>Skills</span>
                     <hr></a></li>
-            <li class="navbar__link"><a href="#"><span>Education</span>
+            <li class="navbar__link"><a href="#projects"><span>Projects</span>
                     <hr></a></li>
             <li class="navbar__link"><a href="#"><span>Portfolio</span>
                     <hr></a></li>
@@ -30,7 +30,7 @@
     </nav>
 
     <main class="container">
-        <article class="card personal-data personal-data--diagonal-background">
+        <article id="personal-data" class="card personal-data personal-data--diagonal-background">
 
             <section class="personal-data__media">
                 <p><i class="fas fa-mobile-alt"></i>514 199 107</p>
@@ -56,39 +56,111 @@
 
         </article>
 
-        <article class="card">
-            <h2 class="card__header">Technologies</h2>
+        <article id="skills" class="card">
+            <h2 class="card__header">Skills</h2>
 
-            <section class="technologies">
-                <div class="technologies__logo technologies__logo--java">
-                    <i class="fab fa-java"></i>
-                </div>
+            <section class="skills">
 
-                <section class="technologies__details technologies__details--back-end">
-                    <h3 class="details__header">Back-end</h3>
-                    <ul class="details__list">
-                        <li>Java</li>
-                        <li>Spring</li>
-                        <li>Hibernate</li>
-                    </ul>
-                </section>
+                <article class="skills__tech-card">
+                    <div class="tech-card__logo">
+                        <i class="fab fa-css3-alt logo__css3"></i>
+                        <i class="fab fa-html5 logo__html5"></i>
+                        <i class="fab fa-js-square logo__javascript"></i>
+                    </div>
+                    <h3 class="tech-card__header">Front End</h3>
+                    <p class="tech-card__details">HTML5, CSS3, JavaScript</p>
+                </article>
 
-                <div class="technologies__logo technologies__logo--front-end">
-                    <i class="fab fa-css3-alt logo__css3"></i>
-                    <i class="fab fa-html5 logo__html5"></i>
-                    <i class="fab fa-js-square logo__javascript"></i>
-                </div>
+                <article class="skills__tech-card">
+                    <div class="tech-card__logo">
+                        <i class="fab fa-java logo__java"></i>
+                    </div>
+                    <h3 class="tech-card__header">Back End</h3>
+                    <p class="tech-card__details">Java, Spring, Hibernate, SQL</p>
+                </article>
 
-                <section class="technologies__details technologies__details--front-end">
-                    <h3 class="details__header">Front-end</h3>
-                    <ul class="details__list">
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>JavaScript</li>
-                    </ul>
-                </section>
+                <article class="skills__tech-card">
+                    <div class="tech-card__logo">
+                        <i class="fas fa-laptop-code logo__tool"></i>
+                    </div>
+                    <h3 class="tech-card__header">Tools</h3>
+                    <p class="tech-card__details">Visual Studio Code, GitKraken, Eclipse</p>
+                </article>
             </section>
 
+        </article>
+
+        <article id="projects" class="card">
+            <h2 class="card__header">Projects</h2>
+
+            <section class="projects">
+                <article class="projects__project">
+                    <div class="project__img">
+                        <img class="img__photo" src="./image/backdrop-874452_1281_zhang_kajyv.jpg" alt="">
+                        <div class="img__more">
+                            <p class="more__description">Lorem ipsum dolor sit amet metus nonummy faucibus quis, aliquam
+                                sapien. Proin justo.</p>
+                            <button class="more__button">Click!</button>
+                        </div>
+                    </div>
+                    <h3 class="project__header"><span>Project name</span></h3>
+                </article>
+                <article class="projects__project">
+                    <div class="project__img">
+                        <img class="img__photo" src="./image/evgeni-tcherkasski-TqXyeNUUr54-unsplash_Evgeni_Tcherkasski.jpg" alt="">
+                        <div class="img__more">
+                            <p class="more__description">Lorem ipsum dolor sit amet metus nonummy faucibus quis, aliquam
+                                sapien. Proin justo.</p>
+                            <button class="more__button">Click!</button>
+                        </div>
+                    </div>
+                    <h3 class="project__header"><span>Project name</span></h3>
+                </article>
+                <article class="projects__project">
+                    <div class="project__img">
+                        <img class="img__photo" src="./image/jj-jordan-P7ASbD-vHW8-unsplash_JJ_Jordan.jpg" alt="">
+                        <div class="img__more">
+                            <p class="more__description">Lorem ipsum dolor sit amet metus nonummy faucibus quis, aliquam
+                                sapien. Proin justo.</p>
+                            <button class="more__button">Click!</button>
+                        </div>
+                    </div>
+                    <h3 class="project__header"><span>Project name</span></h3>
+                </article>
+                <article class="projects__project">
+                    <div class="project__img">
+                        <img class="img__photo" src="./image/backdrop-874452_1281_zhang_kajyv.jpg" alt="">
+                        <div class="img__more">
+                            <p class="more__description">Lorem ipsum dolor sit amet metus nonummy faucibus quis, aliquam
+                                sapien. Proin justo.</p>
+                            <button class="more__button">Click!</button>
+                        </div>
+                    </div>
+                    <h3 class="project__header"><span>Project name</span></h3>
+                </article>
+                <article class="projects__project">
+                    <div class="project__img">
+                        <img class="img__photo" src="./image/backdrop-874452_1281_zhang_kajyv.jpg" alt="">
+                        <div class="img__more">
+                            <p class="more__description">Lorem ipsum dolor sit amet metus nonummy faucibus quis, aliquam
+                                sapien. Proin justo.</p>
+                            <button class="more__button">Click!</button>
+                        </div>
+                    </div>
+                    <h3 class="project__header"><span>Project name</span></h3>
+                </article>
+                <article class="projects__project">
+                    <div class="project__img">
+                        <img class="img__photo" src="./image/backdrop-874452_1281_zhang_kajyv.jpg" alt="">
+                        <div class="img__more">
+                            <p class="more__description">Lorem ipsum dolor sit amet metus nonummy faucibus quis, aliquam
+                                sapien. Proin justo.</p>
+                            <button class="more__button">Click!</button>
+                        </div>
+                    </div>
+                    <h3 class="project__header"><span>Project name</span></h3>
+                </article>
+            </section>
         </article>
     </main>
 
