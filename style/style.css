@@ -208,6 +208,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 2rem;
+    margin: 0 18%;
 }
 
 .technologies__logo{
@@ -217,13 +218,13 @@ body {
 
 .technologies__logo--java{
     order: 2;
-    font-size: 10rem;
+    font-size: 12rem;
     color: red;
 }
 
 .technologies__logo--front-end {
     order: 1;
-    font-size: 6rem;
+    font-size: 8rem;
 }
 
 .logo__css3 {
@@ -238,7 +239,7 @@ body {
 .logo__javascript {
     align-self: flex-end;
     color: rgb(247, 247, 16);
-    font-size: 5.5rem;
+    font-size: 7.5rem;
 }
 
 .technologies__details{
@@ -257,12 +258,14 @@ body {
 
 .details__header{
     margin-bottom: 0.5rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    color: RGB(112, 128, 144);
 }
 
 .details__list{
     list-style: none;
     font-size: 1.2rem;
+    color: RGB(128, 128, 128);
 }
 
 
