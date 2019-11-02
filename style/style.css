@@ -82,7 +82,7 @@
 }
 
 .container {
-    width: 80%;
+    width:70%;
     margin: auto;
 }
 
@@ -174,7 +174,7 @@
 .about-me {
     display: grid;
     grid-template-columns: 2fr 3fr;
-    grid-template-rows: 22rem;
+    grid-template-rows: 18rem;
     box-shadow: 10px 9px 11px 4px rgb(0, 0, 0, 0.3);
     padding: 2rem 1rem;
 }
@@ -188,15 +188,15 @@
 
 .about-me__photo img {
     border-radius: 100%;
-    width: 17rem;
-    height: 17rem;
+    width: 14rem;
+    height: 14rem;
     object-fit: cover;
     object-position: top;
 }
 
 .about-me__details-me {
     display: flex;
-    padding: 2rem 3rem;
+    padding: 2rem 0 2rem 2rem;
 }
 
 .details_me__left {
@@ -427,9 +427,8 @@
 
 @media only screen and (max-width: 1200px) {
 
-    .container {
-        width: 85%;
-        margin: auto;
+    .container{
+        width: 80%;
     }
 
     /* 
@@ -437,12 +436,13 @@
                             */
 
     .about-me {
+        grid-template-rows: 16rem;
         padding: 2.9rem 0;
     }
 
     .about-me__photo img {
-        width: 15rem;
-        height: 15rem;
+        width: 12rem;
+        height: 12rem;
     }
 
     .details_me__left {
@@ -450,7 +450,8 @@
     }
 
     .details_me__right {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+        padding-left: 5%;
     }
 
     /* 
@@ -496,6 +497,19 @@
 }
 
 @media only screen and (max-width: 1000px){
+
+    .container{
+        width: 85%
+    }
+
+    .card__header{
+        font-size: 2rem;
+        margin-bottom: 3.5rem;
+    }
+
+    .about-me {
+        grid-template-rows: 14rem;
+    }
 
     .skills{
         flex-wrap: wrap;
