@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./style/style.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/7d955b1fb2.js" crossorigin="anonymous"></script>
 
@@ -18,7 +19,7 @@
 <body>
     <nav>
         <ul class="navbar navbar--diagonal-background">
-            <li class="navbar__link"><a href="#personal-data"><span>About me</span>
+            <li class="navbar__link"><a href="#about-me"><span>About me</span>
                     <hr></a></li>
             <li class="navbar__link"><a href="#skills"><span>Skills</span>
                     <hr></a></li>
@@ -28,35 +29,42 @@
     </nav>
 
     <main class="container">
-        <article id="personal-data" class="card personal-data personal-data--diagonal-background">
+        <article id="welcome-message" class="card welcome-message welcome-message--diagonal-background">
 
-            <section class="personal-data__media">
-                <p><i class="fas fa-mobile-alt media__contact"></i><br>514 199 107</p>
-                <p><i class="far fa-envelope media__contact"></i><br>piskorz.patryk.96@gmail.com</p>
-                <p>
-                    <a href="https://www.facebook.com/patryk.piskorz.33" target="_blank"><i
-                            class="fab fa-facebook-square media__social-media"></i></a>
-                    <a href="https://linkedin.com/in/patryk-piskórz-902b3b176" target="_blank"><i
-                            class="fab fa-linkedin media__social-media"></i></a>
-                    <a href="https://github.com/PatrykPi" target="_blank"><i
-                            class="fab fa-github media__social-media"></i></a>
-                </p>
-                <p>Patryk Piskórz</p>
-            </section>
+            <p class="welcome-message__welcome"><span>.</span>Hello</p>
 
-            <section class="personal-data__circle-background">
-                <div class="circle-background__circle-photo"></div>
-            </section>
+        </article>
 
-            <section class="personal-data__details">
-                <p>Patryk <br> Piskórz</p>
-                <p>Web Developer</p>
-            </section>
+        <article id="about-me" class="card">
+            <h2 class="card__header card__header--left">About me</h2>
+
+            <div class="about-me">
+
+                <div class="about-me__photo">
+                    <img src="./image/patryk2.jpg" alt="">
+                </div>
+
+                <div class="about-me__details-me">
+                    <div class="details_me__left">
+                        <p>Full name:</p>
+                        <p>Profile:</p>
+                        <p>Phone number:</p>
+                        <p>E-mail:</p>
+                    </div>
+                    <div class="details_me__right">
+                        <p>Patryk Piskórz</p>
+                        <p>Web development</p>
+                        <p>514 199 107</p>
+                        <p>piskorz.patryk.96@gmail.com</p>
+                    </div>
+                </div>
+
+            </div>
 
         </article>
 
         <article id="skills" class="card">
-            <h2 class="card__header card__header--left">Skills</h2>
+            <h2 class="card__header card__header--right">Skills</h2>
 
             <section class="skills">
 
@@ -91,13 +99,14 @@
         </article>
 
         <article id="projects" class="card">
-            <h2 class="card__header card__header--right">Projects</h2>
+            <h2 class="card__header card__header--left">Projects</h2>
 
             <section class="projects">
 
                 <article class="projects__project">
                     <div class="project__img">
-                        <img class="img__photo" src="./image/backdrop-874452_1281_zhang_kajyv.jpg" alt="">
+                        <a href="#"><img class="img__photo" src="./image/backdrop-874452_1281_zhang_kajyv.jpg"
+                                alt=""></a>
                         <div class="img__more">
                             <p class="more__description">Lorem ipsum dolor sit amet metus nonummy faucibus quis, aliquam
                                 sapien. Proin justo.</p>
@@ -109,7 +118,8 @@
 
                 <article class="projects__project">
                     <div class="project__img">
-                        <img class="img__photo" src="./image/evgeni-tcherkasski-TqXyeNUUr54-unsplash_Evgeni_Tcherkasski.jpg" alt="">
+                        <a href="#"><img class="img__photo"
+                                src="./image/evgeni-tcherkasski-TqXyeNUUr54-unsplash_Evgeni_Tcherkasski.jpg" alt=""></a>
                         <div class="img__more">
                             <p class="more__description">Lorem ipsum dolor sit amet metus nonummy faucibus quis, aliquam
                                 sapien. Proin justo.</p>
@@ -121,7 +131,8 @@
 
                 <article class="projects__project">
                     <div class="project__img">
-                        <img class="img__photo" src="./image/jj-jordan-P7ASbD-vHW8-unsplash_JJ_Jordan.jpg" alt="">
+                        <a href="#"><img class="img__photo" src="./image/jj-jordan-P7ASbD-vHW8-unsplash_JJ_Jordan.jpg"
+                                alt=""></a>
                         <div class="img__more">
                             <p class="more__description">Lorem ipsum dolor sit amet metus nonummy faucibus quis, aliquam
                                 sapien. Proin justo.</p>
@@ -133,7 +144,8 @@
 
                 <article class="projects__project">
                     <div class="project__img">
-                        <img class="img__photo" src="./image/erik-mclean-97vpeJe48AA-unsplash_erik_mclean.jpg" alt="">
+                        <a href="#"><img class="img__photo"
+                                src="./image/erik-mclean-97vpeJe48AA-unsplash_erik_mclean.jpg" alt=""></a>
                         <div class="img__more">
                             <p class="more__description">Lorem ipsum dolor sit amet metus nonummy faucibus quis, aliquam
                                 sapien. Proin justo.</p>
@@ -145,7 +157,8 @@
 
                 <article class="projects__project">
                     <div class="project__img">
-                        <img class="img__photo" src="./image/pawel-czerwinski--Kk8x24AQ6Y-unsplash_pawel_czerwinski.jpg" alt="">
+                        <a href="#"><img class="img__photo"
+                                src="./image/pawel-czerwinski--Kk8x24AQ6Y-unsplash_pawel_czerwinski.jpg" alt=""></a>
                         <div class="img__more">
                             <p class="more__description">Lorem ipsum dolor sit amet metus nonummy faucibus quis, aliquam
                                 sapien. Proin justo.</p>
