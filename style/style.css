@@ -82,7 +82,7 @@
 }
 
 .container {
-    width:70%;
+    width: 75%;
     margin: auto;
 }
 
@@ -196,7 +196,7 @@
 
 .about-me__details-me {
     display: flex;
-    padding: 2rem 0 2rem 2rem;
+    padding: 2rem 0 2rem 3rem;
 }
 
 .details_me__left {
@@ -204,7 +204,8 @@
     flex-direction: column;
     justify-content: space-around;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.7rem;
+    text-align: center;
 }
 
 .details_me__right {
@@ -312,7 +313,7 @@
 .projects__project {
     --side-margin: 3%;
     width: calc(100%/3 - 2*var(--side-margin));
-    height: 15rem;
+    height: 20rem;
     margin: 0 var(--side-margin) 4rem var(--side-margin);
     display: grid;
     grid-template-rows: 85% 15%;
@@ -395,7 +396,7 @@
     cursor: default;
 }
 
-@keyframes diagonal-background-navbar {
+/* @keyframes diagonal-background-navbar {
     0% {
         width: 0;
     }
@@ -423,7 +424,7 @@
     100% {
         opacity: 1
     }
-}
+} */
 
 @media only screen and (max-width: 1200px) {
 
@@ -445,12 +446,7 @@
         height: 12rem;
     }
 
-    .details_me__left {
-        font-size: 0.9rem;
-    }
-
     .details_me__right {
-        font-size: 1.2rem;
         padding-left: 5%;
     }
 
@@ -494,12 +490,20 @@
     .tech-card__details {
         margin: 0 0.6rem;
     }
+
+    .projects__project {
+        height: 18rem;
+    }
 }
 
 @media only screen and (max-width: 1000px){
 
     .container{
         width: 85%
+    }
+
+    .card {
+        margin-bottom: 6rem;
     }
 
     .card__header{
@@ -511,13 +515,22 @@
         grid-template-rows: 14rem;
     }
 
+    .about-me__details-me {
+        padding: 1rem 0 1rem 3rem;
+    }
+
+    .details_me__right{
+        padding-right: 1.1rem;
+        font-size: 1.3rem;
+    }
+
     .skills{
         flex-wrap: wrap;
     }
 
     .skills__tech-card {
-        width: calc(80%/2);
-        grid-template-rows: 15rem 5rem 5rem;
+        width: calc(82%/2);
+        grid-template-rows: 15rem 3.5rem 5rem;
         margin-bottom: 2rem;
     }
 
@@ -526,9 +539,232 @@
     }
 
     .projects__project {
-        --side-margin: 3%;
+        --side-margin: 5%;
         width: calc(100%/2 - 2*var(--side-margin));
+        height: 19rem;
         margin: 0 var(--side-margin) 4rem var(--side-margin);
     }
 }
     
+@media only screen and (max-width: 800px){
+
+    .container{
+        width: 90%;
+    }
+
+    .about-me__photo {
+        border-right: none;
+    }
+
+    .about-me__details-me {
+        padding: 1rem 0 1rem 1rem;
+    }
+    
+    .details_me__right{
+        font-size: 1.1rem;
+    }
+
+    .about-me__photo img {
+        width: 11rem;
+        height: 11rem;
+    }
+
+    .skills {
+        padding: 0 1.5rem;
+        justify-content: space-evenly;
+    }
+
+    .skills__tech-card {
+        width: calc(80%/2);
+        grid-template-rows: 13rem 2.5rem 4rem;
+        margin-bottom: 2rem;
+    }
+
+    .logo__css3 {
+        font-size: 4.5rem;
+        margin-top: 6rem;
+    }
+
+    .logo__html5 {
+        font-size: 4.5rem;
+        margin-bottom: 4rem;
+    }
+
+    .logo__javascript {
+        font-size: 4rem;
+        margin-top: 6rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .logo__java {
+        font-size: 8rem;
+    }
+
+    .logo__tool {
+        font-size: 4.5rem;
+        margin-top: 2.5rem;
+    }
+
+    .tech-card__header {
+        font-size: 1.5rem;
+    }
+
+    .tech-card__details {
+        margin: 0 0.6rem;
+    }
+}
+
+@media only screen and (max-width: 660px){
+
+    .card {
+        margin-bottom: 5rem;
+    }
+
+    .about-me {
+        grid-template-rows: 13rem;
+        padding: 1.5rem 0;
+    }
+
+    .about-me__photo img {
+        width: 8.5rem;
+        height: 8.5rem;
+    }
+
+    .about-me__details-me {
+        padding: 0.5rem 0 0.5rem 0.5rem;
+    }
+
+    .details_me__left {
+        font-size: 1.1rem;
+    }
+
+    .details_me__right {
+        font-size: 0.9rem;
+    }
+
+    .skills {
+        padding: 0;
+    }
+
+    .skills__tech-card {
+        width: calc(77%/2);
+        grid-template-rows: 10rem 2.5rem 4rem;
+    }
+
+    .logo__css3 {
+        font-size: 3.5rem;
+    }
+
+    .logo__html5 {
+        font-size: 3.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .logo__javascript {
+        font-size: 3rem;
+    }
+
+    .logo__java {
+        margin-top: 1rem;
+        font-size: 6.5rem;
+    }
+
+    .logo__tool {
+        font-size: 3.5rem;
+    }
+
+    .tech-card__header {
+        font-size: 1.3rem;
+    }
+
+    .tech-card__details {
+        font-size: 0.8rem;
+    }
+
+    .projects__project {
+        height: 15rem;
+    } 
+}
+
+@media only screen and (max-width: 500px){
+
+    .container {
+        width: 95%;
+        margin: auto;
+    }
+
+    .card {
+        margin-bottom: 3rem;
+    }
+
+    .card:first-of-type {
+        margin: 2rem 0 3rem 0;
+    }
+
+    .card__header{
+        margin-bottom: 2rem;
+    }
+
+    .about-me {
+        grid-template-columns: 1fr;
+        grid-template-rows: 10rem 7rem;;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .about-me__details-me{
+        justify-content: center;
+        padding-left: 17%;
+    }
+
+    .details_me__left {
+        font-size: 1rem;
+    }
+
+    .details_me__right {
+        font-size: 0.8rem;
+    }
+
+    .skills{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills__tech-card{
+        width: 15rem;
+        grid-template-rows: 12rem 2.5rem 4rem;
+    }
+
+    .logo__css3 {
+        font-size: 4rem;
+    }
+
+    .logo__html5 {
+        font-size: 4rem;
+        margin-top: 1.5rem;
+    }
+
+    .logo__javascript {
+        font-size: 3.5rem;
+    }
+
+    .logo__java {
+        margin-top: 1rem;
+        font-size: 7rem;
+    }
+
+    .logo__tool {
+        font-size: 4rem;
+    }
+
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects__project {
+        height: 16rem;
+        width: 15rem;
+    }
+
+}
