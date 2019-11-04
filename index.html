@@ -8,8 +8,7 @@
 
     <link rel="stylesheet" href="./style/style.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/7d955b1fb2.js" crossorigin="anonymous"></script>
 
@@ -180,16 +179,16 @@
                 <form class="contact__form" action="#" id="contactForm" autocomplete="off">
 
                     <label for="name">Name:</label>
-                    <input type="text" name="name">
+                    <input type="text" name="name" required>
 
                     <label for="email">Email:</label>
-                    <input type="email" name="email">
+                    <input type="email" name="email" required>
 
                     <label for="topic">Topic:</label>
-                    <input type="text" name="topic">
+                    <input type="text" name="topic" required>
 
                     <label for="message">Message:</label>
-                    <textarea name="message" id="contactForm" cols="20" rows="5"></textarea>
+                    <textarea name="message" id="contactForm" cols="20" rows="5" required></textarea>
 
                     <button>Send</button>
                 </form>

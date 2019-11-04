@@ -18,12 +18,12 @@
 
 body {
     z-index: -2;
-    background-color:var(--theme-color-4);
+    background-color: var(--theme-color-4);
     background-image: radial-gradient(rgb(243, 243, 243) 15%, transparent 16%),
-    radial-gradient(rgb(243, 243, 243) 15%, transparent 16%);
-    background-size: 300px 300px;
+        radial-gradient(rgb(243, 243, 243) 15%, transparent 16%);
+    background-size: 150px 150px;
     background-position: 0 0,
-    150px 150px;
+        75px 75px;
     background-attachment: fixed;
 }
 
@@ -294,6 +294,7 @@ body {
     .welcome-message--diagonal-background::before {
         transform: skewX(-32deg);
     }
+
     .welcome-message__welcome {
         font-size: 6.5rem;
     }
@@ -383,15 +384,21 @@ body {
 }
 
 .skills__tech-card--grad1 {
-    background-image: linear-gradient(45deg, #c0392b, #8e44ad);
+    background: rgb(223, 15, 65);
+    background: linear-gradient(43deg, rgba(223, 15, 65, 1) 0%, rgba(158, 18, 208, 1) 100%);
+    /* background-image: linear-gradient(45deg, #c0392b, #8e44ad); */
 }
 
 .skills__tech-card--grad2 {
-    background-image: linear-gradient(45deg, #159957, #155799);
+    background: rgb(158, 18, 208);
+    background: linear-gradient(43deg, rgba(158, 18, 208, 1) 0%, rgba(27, 115, 207, 1) 100%);
+    /* background-image: linear-gradient(45deg, #159957, #155799); */
 }
 
 .skills__tech-card--grad3 {
-    background-image: linear-gradient(45deg, #30E8BF, #FF8235);
+    background: rgb(27, 170, 207);
+    background: linear-gradient(43deg, rgba(27, 170, 207, 1) 0%, rgba(27, 207, 129, 1) 100%);
+    /* background-image: linear-gradient(45deg, #30E8BF, #FF8235); */
 }
 
 .tech-card__logo {
@@ -543,18 +550,18 @@ footer {
     background-image: linear-gradient(#C33764, #1D2671);
 }
 
-.contact{
+.contact {
     padding: 3rem 0 4rem 0;
     width: 50%;
 }
 
-.contact__header{
+.contact__header {
     margin-bottom: 1.5rem;
     font-size: 2rem;
     color: rgb(252, 240, 231);
 }
 
-.contact__form{
+.contact__form {
     display: flex;
     flex-direction: column;
 }
@@ -583,7 +590,7 @@ footer {
 
 .contact__form button {
     align-self: flex-end;
-    background-image: linear-gradient(to left, rgb(255, 251, 0), rgb(255, 102, 0));
+    background-color: #C33764;
     color: rgb(252, 240, 231);
     border-radius: 1rem;
     border: 0;
@@ -591,6 +598,7 @@ footer {
     width: 25%;
     margin-top: 2rem;
     outline: none;
+    cursor: pointer;
 }
 
 @keyframes diagonal-background-navbar {
@@ -615,7 +623,7 @@ footer {
 
 @media only screen and (max-width: 1200px) {
 
-    .container{
+    .container {
         width: 80%;
     }
 
@@ -683,13 +691,13 @@ footer {
     }
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1000px) {
 
     .navbar--diagonal-background::before {
         left: -10%;
     }
 
-    .container{
+    .container {
         width: 85%
     }
 
@@ -697,7 +705,7 @@ footer {
         margin-bottom: 6rem;
     }
 
-    .card__header{
+    .card__header {
         font-size: 2rem;
         margin-bottom: 3.5rem;
     }
@@ -710,12 +718,12 @@ footer {
         padding: 1rem 0 1rem 3rem;
     }
 
-    .details_me__right{
+    .details_me__right {
         padding-right: 1.1rem;
         font-size: 1.3rem;
     }
 
-    .skills{
+    .skills {
         flex-wrap: wrap;
     }
 
@@ -725,7 +733,7 @@ footer {
         margin-bottom: 2rem;
     }
 
-    .skills__tech-card:last-of-type{
+    .skills__tech-card:last-of-type {
         margin-bottom: 0;
     }
 
@@ -736,8 +744,8 @@ footer {
         margin: 0 var(--side-margin) 4rem var(--side-margin);
     }
 }
-    
-@media only screen and (max-width: 800px){
+
+@media only screen and (max-width: 800px) {
 
     .navbar {
         margin-right: 0;
@@ -747,7 +755,7 @@ footer {
         font-size: 1.2rem;
     }
 
-    .container{
+    .container {
         width: 90%;
     }
 
@@ -758,8 +766,8 @@ footer {
     .about-me__details-me {
         padding: 1rem 0 1rem 1rem;
     }
-    
-    .details_me__right{
+
+    .details_me__right {
         font-size: 1.1rem;
     }
 
@@ -813,13 +821,13 @@ footer {
     }
 }
 
-@media only screen and (max-width: 660px){
+@media only screen and (max-width: 660px) {
 
     .navbar__link {
         margin-right: 0;
     }
 
-    .navbar__link span{
+    .navbar__link span {
         font-size: 1.1rem;
     }
 
@@ -890,14 +898,14 @@ footer {
 
     .projects__project {
         height: 15rem;
-    } 
+    }
 
     .contact {
         width: 75%;
     }
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 500px) {
 
     .navbar--diagonal-background::before {
         left: -20%;
@@ -916,18 +924,19 @@ footer {
         margin: 2rem 0 3rem 0;
     }
 
-    .card__header{
+    .card__header {
         margin-bottom: 2rem;
     }
 
     .about-me {
         grid-template-columns: 1fr;
-        grid-template-rows: 10rem 7rem;;
+        grid-template-rows: 10rem 7rem;
+        ;
         box-shadow: none;
         padding: 0;
     }
 
-    .about-me__details-me{
+    .about-me__details-me {
         justify-content: center;
         padding-left: 17%;
     }
@@ -940,12 +949,12 @@ footer {
         font-size: 0.8rem;
     }
 
-    .skills{
+    .skills {
         flex-direction: column;
         align-items: center;
     }
 
-    .skills__tech-card{
+    .skills__tech-card {
         width: 15rem;
         grid-template-rows: 12rem 2.5rem 4rem;
     }
@@ -988,27 +997,27 @@ footer {
 
 }
 
-@media only screen and (max-width: 420px){
+@media only screen and (max-width: 420px) {
 
     .navbar--diagonal-background::before {
         left: -22%;
     }
 
-    .navbar__link{
+    .navbar__link {
         margin-left: 1rem;
     }
 
-    .navbar__link span{
+    .navbar__link span {
         font-size: 1rem;
     }
 }
 
-@media only screen and (max-width: 340px){
-     .navbar__link {
-         margin-left: 0.9rem;
-     }
+@media only screen and (max-width: 340px) {
+    .navbar__link {
+        margin-left: 0.9rem;
+    }
 
-     .navbar__link span {
-         font-size: 0.9rem;
-     }
+    .navbar__link span {
+        font-size: 0.9rem;
+    }
 }
